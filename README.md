@@ -34,6 +34,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0560-subarray-sum-equals-k](https://github.com/Bhavya934/75DaysLeetCodeChallenge/tree/master/0560-subarray-sum-equals-k) |
 | [0643-maximum-average-subarray-i](https://github.com/Bhavya934/75DaysLeetCodeChallenge/tree/master/0643-maximum-average-subarray-i) |
 | [0739-daily-temperatures](https://github.com/Bhavya934/75DaysLeetCodeChallenge/tree/master/0739-daily-temperatures) |
+| [0875-koko-eating-bananas](https://github.com/Bhavya934/75DaysLeetCodeChallenge/tree/master/0875-koko-eating-bananas) |
 | [0904-fruit-into-baskets](https://github.com/Bhavya934/75DaysLeetCodeChallenge/tree/master/0904-fruit-into-baskets) |
 | [0977-squares-of-a-sorted-array](https://github.com/Bhavya934/75DaysLeetCodeChallenge/tree/master/0977-squares-of-a-sorted-array) |
 ## Hash Table
@@ -139,6 +140,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/Bhavya934/75DaysLeetCodeChallenge/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0209-minimum-size-subarray-sum](https://github.com/Bhavya934/75DaysLeetCodeChallenge/tree/master/0209-minimum-size-subarray-sum) |
 | [0278-first-bad-version](https://github.com/Bhavya934/75DaysLeetCodeChallenge/tree/master/0278-first-bad-version) |
+| [0875-koko-eating-bananas](https://github.com/Bhavya934/75DaysLeetCodeChallenge/tree/master/0875-koko-eating-bananas) |
 ## Greedy
 |  |
 | ------- |
