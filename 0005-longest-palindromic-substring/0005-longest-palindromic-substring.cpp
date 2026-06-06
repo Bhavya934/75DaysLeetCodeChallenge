@@ -1,27 +1,39 @@
 class Solution {
 public:
     string longestPalindrome(string s) {
-        if(s.length()<=1) return s;
+        int n = s.length();
+        if (n <= 1) return s;
 
-        int start=0,maxLen=0;
-        for(int i=0;i<s.length();i++){
-            expand(s,i,i,start,maxLen);
-                        expand(s,i,i+1,start,maxLen);
-  }
-        return s.substr(start,maxLen);
+        vector<vector<bool>> dp(n, vector<bool>(n, false));
+        int start = 0, maxLen = 1;
 
-    }
-    private:
-            void expand(string&s, int left, int right,int& start,int& maxLen){
-                while (left >= 0 && right < s.length() && s[left] == s[right]) {
-            int currentLen = right - left + 1;
-            if (currentLen > maxLen) {
-                start = left;
-                maxLen = currentLen;
-            }
-            left--;
-            right++;
+        for (int i = 0; i < n; i++) {
+            dp[i][i] = true;
         }
+
+        for (int i = 0; i < n - 1; i++) {
+            if (s[i] == s[i + 1]) {
+                dp[i][i + 1] = true;
+                if (maxLen < 2) {
+                    start = i;
+                    maxLen = 2;
+                }
             }
-            
+        }
+
+        for (int len = 3; len <= n; len++) {
+            for (int i = 0; i <= n - len; i++) {
+                int j = i + len - 1;
+                if (s[i] == s[j] && dp[i + 1][j - 1]) {
+                    dp[i][j] = true;
+                    if (len > maxLen) {
+                        start = i;
+                        maxLen = len;
+                    }
+                }
+            }
+        }
+
+        return s.substr(start, maxLen);
+    }
 };
