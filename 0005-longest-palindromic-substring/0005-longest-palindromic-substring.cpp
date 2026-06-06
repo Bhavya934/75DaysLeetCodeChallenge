@@ -7,8 +7,7 @@ public:
         for(int i=0;i<s.length();i++){
             expand(s,i,i,start,maxLen);
                         expand(s,i,i+1,start,maxLen);
-
-        }
+  }
         return s.substr(start,maxLen);
 
     }
